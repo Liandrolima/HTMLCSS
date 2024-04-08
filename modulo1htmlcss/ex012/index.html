@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <H1>Imagem dinâmica</H1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1080px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML.</p>
+    <audio src="midias/Andorinha.mp4" controls autoplay></audio>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/Andorinha.mp4" type="audio/mpeg">
+        <source src="midias/Andorinha.ogg" type="audio/ogg">
+        <source src="midias/Andorinha.wav" type="audio/wav"> <!--o wav não é recomendado pois é muito pesado-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midias/Andorinha.mp4">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <h1>Reproduzindo vídeos</h1>
+    <!--baixar vídeos e imagens:pexels(gratuito) cuidado com direitos autorais mp4,m4v, ogv, webm(RUIM) programa gratuito de conversão de vídeos HandBrake-->
+    <p>Vamos aprender a reproduzir Vídeos em HTML.</p>
+    <video src="midias/Andorinha.mp4" width="200" controls autoplay></video>
+    <p>Outra forma</p>
+    <video preload="metadata" width="200" poster="imagens/foto.png" autoplay controls loop>
+        <source src="midias/Andorinha.mp4" type="video/mp4">
+        <source src="midias/Andorinha.m4v" type="video/mp4">
+        <source src="midias/Andorinha.webm" type="video/webm">
+        <source src="midias/Andorinha.ogg" type="video/ogg">
+        <p>Seu navegador não tem compatibiidade com vídeos</p>
+
+    </video>
+    <h1>Incorporação de vídeos externos</h1>
+    <!--o custo fica muito alto quando se usa hospedagem interna, mas se adicionar vídeos de serviços de vídeos, ou seja, serviços de hospedagem de vídeos como um exemplo é usar vídeos do youtube, se pode colocar qualquer vídeo do youtube detro de um site de forma simples(por exemplo:animation reel). abra  o youtube -> procure e abra um vídeo -> compartilhar -> incorporar -> cole o código montado e cole aqui. Lembrando que o formato recomendado é o m4v. outro exemplo de serviço de hospedagem é o vimeo  -->
+</body>
+</html>
