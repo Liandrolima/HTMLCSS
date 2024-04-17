@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando o uso de um iframe</title>
+    <style>
+        iframe {/*lembrando que as configurações em folhas de estilo sobrepoem as demias configurações de estilo*/
+            width: 400;
+            height: 400;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>Acessando  o site aqui
+        <!--Tamanho padrão do iframe é de 300x150. O parametro scolling pode não funcionar em alguns navegadores-->
+        <iframe src="https://liandrolima.github.io/projeto-cordel/" frameborder="0" height="500" scolling="auto"></iframe>
+    </p><!--Alguns site não permitem o uso de iframe como o google por medida de segurança, poiso iframe não é totalmente seguro. Como nem sempre o iframe roda em celular então se pode fazer uma ancora para caso não lê, ler a ancoroca ou o informativo-->
+        <a href="https://liandrolima.github.io/projeto-android/" target="_blank">Origem do mascote</a>
     
+    <p>O repositório do Liandro
+        <iframe src="https://liandrolima.github.io/projeto-android/" frameborder="0" height="500" width="500"></iframe>no
+        <a href="https://liandrolima.github.io/projeto-android/" target="_blank">GitHub</a> é criativo, simples e interessante!</p>
 </body>
 </html>
