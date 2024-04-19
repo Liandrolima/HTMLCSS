@@ -11,15 +11,23 @@
         }
 
         iframe#tela {
-            width: 70vw;
-            height: 400px;
-            
+            width: 92vw;
+            height: 400px;            
             border: 2px solid black;
         }
+
+        
     </style>
 </head>
 <body>
     <h1>Faça uma escolha</h1>
+    <p>Informações sobre o uso do iframe:
+        1- Conteúdo muito importante evite usar iframe, pois o google bot pode não conseguir entrar em alguns iframe não conseguindo indexar;
+        2- Não coloque um site inteiro usando iframe, pois pode existir problemas de idetificação;
+        3 - Usabilidade e acessibilidade, ou seja, pessoas com algum tipo de necessidade especial como por exemplo pessoas cegas, por intermédio de softwares leitores de telas e esses apresentam problemas para acessar iframe.
+        3- Usabilidade, ou seja, são aqueles problemas em que o próprio navegador acaba se confundindo ou o usuário acaba se confundindo como exemplo: caso se esteja em uma página de um site que usa iframe e se deseja volta para a página principal alguns navegadores apresentam problemas para voltar ou seja não sabem se volta para página principal ou para o iframe; outro exemplo é no uso de targuet _blank alguns navegadores não entendem que é para abrir uma tela nova mas não dentro do iframe; outro problema se o site não for responsivo pode ser que ele apareça todo quebrado.
+        4- Segurança, ou seja, os iframe abrem as portas para outros site isso tem que ser feito com cuidado devido a ataques, invasão como exemplo croesite, xss
+    </p>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cum alias nostrum non, autem illo nulla nihil fugiat cumque, sint quibusdam consequatur, eligendi reiciendis! Dolorum accusantium ea quibusdam cum fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eaque cum, maiores necessitatibus sunt animi dolor dicta nesciunt tempora odio consequuntur adipisci culpa nihil ratione, laudantium in voluptatibus illum vero?</p>
     
     <ul>
@@ -30,7 +38,9 @@
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint corrupti odit eum reiciendis maxime doloremque odio dicta perferendis ea modi maiores aspernatur repellendus excepturi fuga quod ratione laudantium at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ab quis! Quis consequatur ipsam quisquam dolorem pariatur autem rem vero nemo. Beatae veniam consectetur quaerat illo laboriosam nisi debitis iure.</p>
 
-    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque nisi unde incidunt voluptas mollitia, tenetur pariatur aspernatur cum? Voluptatem, ad quisquam. Et possimus, ipsum nemo optio dignissimos excepturi delectus.</p><img src='imagem/Captura de tela 2024-04-18 172450.png'>"> <!--modo 2:Caso vc não queira que a tela apareça fazia uma das formas é colocar no src="paginas-extras/pagina001.html"-->
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque nisi unde incidunt voluptas mollitia, tenetur pariatur aspernatur cum? Voluptatem, ad quisquam. Et possimus, ipsum nemo optio dignissimos excepturi delectus.</p>
+        <img src='imagem/Captura de tela 2024-04-18 172450.png'>"> <!--modo 2:Caso vc não queira que a tela apareça fazia uma das formas é colocar no src="paginas-extras/pagina001.html"-->
         <p>Infelizmente seu navegador não é compatível com isso.</p>
     </iframe>
    
