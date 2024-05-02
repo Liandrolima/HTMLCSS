@@ -1,0 +1,85 @@
+@charset "UTF-08";
+
+/*Todas as demais mídias, pesquisar sobre TYPICAL DEVICE BREAKPOINTS
+RECOMENDAÇÕES DO W3C(MAS TEM QUE ATUALIZAR PARA VE SE NÃO MUDOU
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desctop: 992px até 1200px
+Grandes telas: acima de 1200px*/
+
+@media print {/*impressão*/
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagem/back-print.jpg); /*desnecessário*/       
+        text-shadow: none;        
+    }
+
+    main {
+        width: 70%;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Jesus só salva de renunciar a si mesmo e o mundo';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display:  block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {/*TABLET*/
+    body {
+        background-image: url(../imagem/back-tablet.jpg);        
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display:  none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {/*DESCTOP*/
+    body {
+        background-image: url(../imagem/back-pc.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display:  none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+    
+}
+
+@media screen and (min-width: 1200px) {/*GRANDES TELAS*/
+    body {
+        background-image: url(../imagem/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display:  none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+}
