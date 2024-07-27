@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            height: 400px;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        div#i {
+            
+        }
+
+        div#i2 {
+           align-self: inherit;
+            
+        }
+
+        div#i3 {
+            align-self: flex-end;
+        }
+
+        div#i4 {
+            
+        }
+
+        div#i5 {
+            align-self: center;
+        }
+
+        div#i6 {
+            
+        }
+
+        div#i7 {
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order</h1>
+    <h1>Align-self</h1>
+    <p>Align-self não serve para Pais, não serve para conteineres serve para itens.
+        Align-self configurado sobrepõe o valor padrão.
+    </p>
+    <p>Ela se aplica a cada um dos itens. Funciona diretamente no closs-axis. Cinco valores do Align-self: auto - herda as características de alinhamento vertical de seu pai seja ele o align content ou o align item
+    flex-start - que é o alinhamento perto do cross start
+    flex-end - que o alinhamento perto do cross end
+    center - vai calcular o meio entre o cross start e o cross end
+    stretch - vai dar uma puxada para que ele ocupe o espaço inteiro do eixo transversal.
+    </p>
+    <div class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+    
+</body>
+</html>
