@@ -1,0 +1,49 @@
+body{
+    background-color: cadetblue;
+    color: blue;
+}
+
+header{
+    background-color: antiquewhite;
+}
+
+main{
+    background-color:blanchedalmond;
+}
+
+footer{
+    background-color: bisque;
+}
+
+h2{
+    color: red;
+}
+
+#titulo{
+    color: green;
+}
+
+ul{
+    list-style: none;
+    color: rgb(30, 31, 31);
+}
+
+#teimoso{
+    color: rgb(30, 31, 31);
+}
+
+.item{
+    color: blueviolet;
+}
+
+section .classe1{
+    background-color: aqua;
+}
+
+section p{
+    color: chartreuse;
+}
+
+p{
+    color: cornflowerblue;
+}
