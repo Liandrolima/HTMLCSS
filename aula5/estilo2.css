@@ -1,0 +1,49 @@
+li{
+    background-color: aqua;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+p{
+    background-color:brown;
+    border: 1px solid black;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.403);
+    /* border-bottom: 4px solid black;
+    border-right: 4px solid black; */
+}
+
+a{
+    background-color: rgb(39, 233, 13);
+}
+
+span{
+    background-color: chartreuse;
+}
+
+ul{
+    background-color: aquamarine;
+    display: inline;
+}
+
+MARGIN
+p{
+    background-color:brown;
+    /* margin: 50px; QUANDO VOCÊ COLOCA SÓ UMA VALOR, ELE APLICA PARA OS 4 LADOS */ 
+
+    /* margin-top: 100px;
+    margin-right: 200px;
+    margin-bottom: 0px;
+    margin-left: 10px; VOCÊ TAMBÉM PODE ESCOLHER MANUALMENTE CADA VALOR */
+
+    /* margin: 20px 100px; QUANDO VOCÊ COLOCA DOIS VALORES ELE APLICA O PRIMEIRO PRA CIMA E PRA BAIXO E O SEGUNDO PRA DIREITA E PRA ESQUERDA. */
+
+    /* margin: 100px 200px 0px 10px; QUANDO VOCÊ COLOCA OS 4 VALORES ELE DISTRIBUI NO SENTINDO HORÁRIO DE UM RELÓGIO. */
+}
+
+
+PADDING SEGUE AS MESMAS REGRAS DO MARGIN
+p{
+    background-color:brown;
+    padding: 30px;
+
+}

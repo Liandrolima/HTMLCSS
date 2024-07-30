@@ -1,0 +1,22 @@
+li{
+    background-color: aqua;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+p{
+    background-color:brown;
+}
+
+a{
+    background-color: rgb(39, 233, 13);
+}
+
+span{
+    background-color: chartreuse;
+}
+
+ul{
+    background-color: aquamarine;
+    display: inline;
+}
