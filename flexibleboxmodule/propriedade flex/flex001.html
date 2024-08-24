@@ -21,7 +21,15 @@
         div#cxA {
             /*flex-shrink: 0;
             flex-grow: 1;
-            flex-basis: 200px;*/
+            flex-basis: 200px;
+            recomendação da W3C USAR A PROPRIEDADE FLEX NA ORDEN COLOCADA ABAIXO
+            CONFIGURAÇÃO E ORDEM PADRÃO:
+            FLEX = FLEX-GROW + FLEX-SHRINK + FLEX-BASIS
+            flex: 0 1 auto é a mesma coisa de flex: initial
+            flex: 0 0 auto serve para deixar os elementos inflexivel se pode colocar assim flex: none
+            flex: 1 1 auto é o máximo de flexibilidade, caixa mega flexivel
+            flex: 3 apenas um valor significa flex-grow = 3 flex-shrink e flex-basis serão valores padrão ou seja flex : 3 1 auto
+            recomendação da W3C USAR A PROPRIEDADE FLEX NA ORDEN COLOCADA ABAIXO*/
 
             flex: 1 0 200px;
         }
@@ -29,7 +37,8 @@
         div#cxB {
             /*flex-shrink: 1;
             flex-grow: 1;
-            flex-basis: 150px;*/
+            flex-basis: 150px;
+            recomendação da W3C USAR A PROPRIEDADE FLEX NA ORDEN COLOCADA ABAIXO*/
 
             flex: 1 1 150px
 
@@ -39,7 +48,8 @@
         div#cxC {
             /*flex-shrink: 8;
             flex-grow: 1;
-            flex-basis: auto;*/
+            flex-basis: auto;
+            recomendação da W3C USAR A PROPRIEDADE FLEX NA ORDEN COLOCADA ABAIXO*/
 
             flex: 1 0 auto;
         }
