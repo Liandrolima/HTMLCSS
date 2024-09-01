@@ -1,0 +1,40 @@
+header {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+div.conteiner {
+    /*
+    justify-content: alinha os itens dentro do eixo principal
+    align-itens: alinha os itens dentro do eixo transversal
+    align-content: alinha os elementos do eixo transversal mas quando os mesmos estão empacotados
+    */
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: space-between;
+    padding: 60PX;
+    height: 120vh;
+    border-radius: 5px;
+}
+
+div.conteiner p {
+    padding: 20px;
+}
+
+div.item {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+div > img {
+    height: 80px;
+    border-radius: 20px;
+}

@@ -4,44 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
-    <style>
-        div.conteiner {
-            /*
-            justify-content: alinha os itens dentro do eixo principal
-            align-itens: alinha os itens dentro do eixo transversal
-            align-content: alinha os elementos do eixo transversal mas quando os mesmos estão empacotados
-            */
-            background-color: lightsalmon;
-
-            display: flex;
-            flex-flow: row wrap;
-            align-content: space-evenly;
-            height: 400px;
-        }
-
-        div.item {
-            background-color: lightskyblue;
-            border: 1px solid black;
-            text-align: center;
-            padding: 40px;
-            
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">      
 </head>
 <body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Cursos</a>
+            <a href="#">Projetos</a>
+            <a href="#">Currículo</a>
+            <a href="#">Contatos</a>
+        </nav>
+    </header>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">I</div>
-        <div class="item">J</div>
-        <div class="item">L</div>
-        <div class="item">M</div>
-        
+        <div class="item">
+            <h1>LIANDRO LIMA DA SILVA</h1>
+            <img src="avatar.jpg" alt="avatar">
+            <p>JESUS SALVA</p>
+            
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati modi eos iure dolor voluptatem distinctio necessitatibus deleniti voluptas unde quaerat, esse quibusdam perspiciatis. Voluptates placeat sint deleniti explicabo ad.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, commodi. Eveniet, a ullam beatae recusandae accusamus suscipit saepe aspernatur. Ipsa eos praesentium voluptatem quas excepturi itaque aperiam sint nulla. Harum.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium a illum reiciendis nesciunt, veniam ex saepe ullam magni in vel animi dolor perferendis error expedita quidem numquam nostrum deleniti rerum.</p>   
         
     </div>
     
